@@ -7,18 +7,21 @@ this packge can be helpful.
 `npm install mock-session`
 
 ```
-mockSession('Session name of cookie-session', 'first key of cookie-session', 'data you need to add in session');
+mockSession('Session name of cookie-session',    
+            'first key of cookie-session',      
+            'data you need to add in session'     
+          );
 ```
 
 
 # Example
 ```
 let mockSession = require('mock-session');
-let cookie = mockSession('my-session', 'my-secret', {"count":1});     
+let cookie = mockSession('my-session', 'my-secret', {"count":1});   
 .
 .
 .
-await request(app).get('api/images')
+await request(app).get('api/images/create')
         .set('cookie', [cookie])
         .expect(200);
 ```
@@ -27,8 +30,8 @@ Controller Side:
   You'll receive session object like this
 
 ```
-function create(req, res) {         
-  if(req.session.count == 1) { // true                     
+exports.create = function(req, res) {         
+  if(req.session.count == 1) { // true                      
     //do something                
     res.sendStatus(200);                    
   }
