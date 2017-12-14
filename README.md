@@ -6,13 +6,15 @@ this packge can be helpful.
 
 `npm install mock-session`
 
+```
 mockSession('Session name of cookie-session', 'first key of cookie-session', 'data you need to add in session');
+```
 
 
 # Example
 ```
 let mockSession = require('mock-session');
-let cookie = mockSession('my-session', 'my-secret', {"count":1});
+let cookie = mockSession('my-session', 'my-secret', {"count":1});     
 .
 .
 .
@@ -26,8 +28,8 @@ Controller Side:
 
 ```
 function create(req, res) {         
-  if(req.session.count == 1) { // true          
-    //do something              
+  if(req.session.count == 1) { // true                     
+    //do something                
     res.sendStatus(200);                    
   }
 }
