@@ -1,10 +1,12 @@
 {
   "name": "mock-session",
   "description": "Create required session object for testing, which is used with cookie-session.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Waleed Ashraf <hy@waleedashraf.me>",
   "license": "MIT",
-  "keywords": ["cookie, mocha, test, express, crypto, cookie-session, Keygrip"],
+  "keywords": [
+    "cookie, mocha, test, express, crypto, cookie-session, Keygrip"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/WaleedAshraf/mock-session.git"
