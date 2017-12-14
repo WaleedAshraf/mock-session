@@ -1,7 +1,7 @@
 {
   "name": "mock-session",
   "description": "Create required session object for testing, which is used with cookie-session.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Waleed Ashraf <hy@waleedashraf.me>",
   "license": "MIT",
   "keywords": [
