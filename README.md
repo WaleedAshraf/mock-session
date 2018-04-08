@@ -1,3 +1,8 @@
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+
+[![NPM][npm-download-image]][npm-url]
+
 # mock-session
 Create required session object for testing, which is used with cookie-session.
 
@@ -37,3 +42,9 @@ exports.create = function(req, res) {
   }
 }
 ```
+
+[npm-image]: https://img.shields.io/npm/v/mock-session.svg
+[npm-url]: https://www.npmjs.com/package/mock-session
+[npm-download-image]: https://nodei.co/npm/mock-session.png?downloads=true&downloadRank=true
+[downloads-image]: https://img.shields.io/npm/dm/mock-session.svg
+[downloads-url]: https://www.npmjs.com/package/mock-session
